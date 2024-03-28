@@ -1,0 +1,114 @@
+/* Updated CSS with typing animation for .same */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    height: 500px;
+    width: 700px;
+    text-align: right;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 120px;
+    line-height: 7rem;
+    margin-top: 2rem;   
+}
+
+#text {
+    font-size: 15px;
+    margin-top: 2.5rem;
+    display: inline-block;
+    animation: fadeInRight 2s forwards;
+}
+#future {
+    display: inline-block;
+    animation: slideRight 2s forwards;
+}
+span {
+    display: inline-block;
+    animation: colorChange 8s infinite alternate,
+    fadeInRight 2s forwards;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-30%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes colorChange {
+    0% {
+        color: white;
+    }
+    50% {
+        color: lightblue;
+    }
+    100% {
+        color: white;
+    }
+}
+
+a {
+    padding: 10px;
+    background-color: #6C135F;
+    color: white;
+    animation: fadeInRight 4s forwards;
+}
+
+.same {
+    display: inline;
+    animation: fadeInRight 3s infinite;
+}
+
+@keyframes underlineText {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+#first {
+    margin-right: 3rem;
+}
